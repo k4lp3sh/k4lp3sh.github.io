@@ -167,7 +167,7 @@ p {
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
 	background-color: #f7c552;
 }
-bootstrap.min.css:5
+
 .navbar-toggle {
     position: relative;
     float: right;
@@ -254,6 +254,28 @@ bootstrap.min.css:5
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	position: relative;
+}
+
+div#about:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000073;
+    z-index: 1;
+}
+
+div#about .container {
+    position: relative;
+    z-index: 1;
+}
+
+#about h4, #about h2, #about p {
+    color: white;
 }
 
 #about .service-item {
@@ -425,6 +447,7 @@ bootstrap.min.css:5
 
 
 
+
 #blog {
 	background-image: url(../img/blog-bg.jpg);
 	background-repeat: no-repeat;
@@ -545,7 +568,25 @@ bootstrap.min.css:5
     background-image: url(../img/skills-bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+	background-attachment: fixed;
+	position: relative;
+}
+
+#skills:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000073;
+    z-index: 1;
+}
+
+#skills > .container {
+	position: relative;
+	z-index: 1;
 }
 
 #skills .service-item {
@@ -581,6 +622,10 @@ bootstrap.min.css:5
 #skills .service-item p {
     color: #fff;
     margin-top: 30px;
+}
+
+#skills .text-top, #skills span {
+	color: #fff;
 }
 
 #skills .service-item .primary-blue-button {
@@ -843,6 +888,16 @@ footer .contact-info ul li em {
 	font-weight: 500;
 }
 
+footer .contact-info ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+footer .contact-info ul li a:hover {
+	color: #f7c552;
+}
+
 footer .connect-us h4 {
 	margin-top: 0px;
 	font-size: 13px;
@@ -1026,4 +1081,45 @@ footer .connect-us ul li a:hover {
 		border-right: none;
 	}
 
+}
+
+.social-links a {
+	display: inline-block;
+	font-size: 20px;
+	color: #000;
+	background-color: #f7c552;
+	border-radius: 100%;
+	padding: 5px;
+    width: 40px;
+    height: 40px;
+	line-height: 30px;
+	margin: 5px;
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+
+.social-links a:hover {
+	color: #f7c552;
+	background-color: #000;
+}
+
+.contact-link {
+	background: #f7c552;
+    border: none;
+    color: black;
+    border-radius: 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 20px auto;
+	margin-bottom: 0;
+	font-weight: bold;
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+
+.contact-link:hover {
+	background: #000;
+    color: #f7c552;
 }
